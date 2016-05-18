@@ -1,0 +1,14 @@
+{
+  "name": "app-teste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Gustavo C.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
