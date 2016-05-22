@@ -1,10 +1,14 @@
 const express = require('express'),
+    bp = require('body-parser'),
     app = express()
 
+app.use(bp.urlencoded({
+    extend: true
+}))
 app.use(express.static('public'))
 
 app.post('/api', (req, res, next) => {
-    console.log(req.query.nome)
+    console.log(req.body.nome, req.body.idade)
     next()
 }, (req, res) => {
     res.redirect('/')
